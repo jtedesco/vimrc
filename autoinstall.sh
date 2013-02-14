@@ -1,14 +1,9 @@
 #!/bin/sh
 
-# Check that some argument was provided
-if [ $# -eq "0" ] # should check for no arguments
-then
-    echo "\n\tUsage: autoinstall.sh <INSTALL_TO_PATH>\n"
-    exit $E_OPTERROR
-fi
 
-INSTALL_TO=$1
-echo "Downloading to $1..."
+echo "Enter the absolute path of download directory, followed by [ENTER]:"
+read INSTALL_TO
+echo "Downloading to '$INSTALL_TO' ..."
 
 warn() {
     echo "$1" >&2
