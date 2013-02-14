@@ -36,6 +36,7 @@ like it.  To do so, please do the following:
 
 5. Touch::
 
+   	mkdir ~/.vim
    	touch ~/.vim/user.vim
 
 That's it.
