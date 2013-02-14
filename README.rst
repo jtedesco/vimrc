@@ -3,7 +3,8 @@ Quick installation
 Simply run this script to install and configure this vimrc in your `$HOME`
 dir::
 
-	wget -O - https://github.com/jtedesco/vimrc/raw/master/autoinstall.sh | sh
+	wget https://github.com/jtedesco/vimrc/raw/master/autoinstall.sh &&
+	chmod u+rx autoinstall.sh && ./autoinstall.sh
 
 Installing this vimrc manually
 ==============================
