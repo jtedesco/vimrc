@@ -14,6 +14,7 @@ die() {
     exit 1
 }
 
+[ -e "$INSTALL_TO" ] || die "'$INSTALL_TO' does not exist."
 [ -e "$INSTALL_TO/vimrc" ] && die "$INSTALL_TO/vimrc already exists."
 [ -e "~/.vim" ] && die "~/.vim already exists."
 [ -e "~/.vimrc" ] && die "~/.vimrc already exists."
